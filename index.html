@@ -98,6 +98,13 @@
   .sec-head h2{font-size:clamp(1.5rem,3vw,2.05rem);margin-bottom:12px}
   .sec-head p{color:var(--ink-soft)}
 
+  /* example */
+  .example{background:var(--panel)}
+  .example-row{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+  .example-row h2{font-size:clamp(1.25rem,2.6vw,1.5rem);margin-bottom:8px}
+  .example-row p{color:var(--ink-soft);font-size:.97rem;max-width:38em}
+  @media(max-width:700px){.example-row{flex-direction:column;align-items:flex-start}}
+
   /* steps */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   @media(max-width:760px){.steps{grid-template-columns:1fr}}
@@ -177,7 +184,6 @@
       <a href="#how">How it works</a>
       <a href="#included">What's included</a>
       <a href="#pricing">Pricing</a>
-      <a href="https://client.sitesbyant.com" target="_blank" rel="noopener">See an example</a>
       <a class="nav-cta" href="#contact">Get a free mockup</a>
     </nav>
   </div>
@@ -190,7 +196,7 @@
     <div>
       <span class="kicker">Websites for local businesses</span>
       <h1>Your business lives on Instagram. Your customers are searching Google.</h1>
-      <p class="lede">I build clean, fast websites for local businesses using the photos, menu, and reviews you already have — live in about a week, then hosted and maintained for a flat monthly rate. You never touch a website builder.</p>
+      <p class="lede">I build clean, fast websites for local businesses using the photos, Google reviews, and business info you already have — live in about a week, then hosted and maintained for a flat monthly rate. You never touch a website builder.</p>
       <div class="btn-row">
         <a class="btn" href="#contact">Get a free homepage mockup</a>
         <a class="btn ghost" href="#pricing">See pricing</a>
@@ -203,7 +209,7 @@
         <div class="serp-row bad">
           <div class="serp-title">linktr.ee/yourbusiness</div>
           <div class="serp-url">linktr.ee</div>
-          <div class="serp-desc">A list of links. No menu, no hours, no reviews.</div>
+          <div class="serp-desc">A list of links. No hours, no reviews, no way to find you.</div>
         </div>
         <div class="serp-row bad">
           <div class="serp-title">Your competitor two blocks over</div>
@@ -211,13 +217,23 @@
           <div class="serp-desc">Full site. Gets the customer.</div>
         </div>
         <div class="serp-row good">
-          <div class="serp-title">Your Business — Menu, Hours &amp; Location</div>
+          <div class="serp-title">Your Business — Reviews, Photos &amp; Hours</div>
           <div class="serp-url">yourbusiness.com</div>
           <div class="serp-desc">What it looks like after we work together.</div>
         </div>
         <div class="serp-caption">Most "near me" customers never open Instagram. They search, tap the first real result, and go.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="example" class="example">
+  <div class="wrap example-row">
+    <div>
+      <h2>Want to see one before you commit?</h2>
+      <p>A live example, built the exact same way — real photos, real Google reviews, real business info. No lorem ipsum.</p>
+    </div>
+    <a class="btn" href="https://client.sitesbyant.com" target="_blank" rel="noopener">View the live example</a>
   </div>
 </section>
 
@@ -236,12 +252,12 @@
       <div class="step">
         <span class="tag">Step two</span>
         <h3>We finish it together</h3>
-        <p>A 20-minute call to confirm your menu, pricing, and details. One round of revisions is included. Most sites go live within a week.</p>
+        <p>A 20-minute call to confirm your reviews, photos, and business details. One round of revisions is included. Most sites go live within a week.</p>
       </div>
       <div class="step">
         <span class="tag">Step three</span>
         <h3>I run it, you forget it</h3>
-        <p>Hosting, security, updates to your menu or hours, and a monthly visitor report — all covered by the flat monthly rate. Cancel anytime with 30 days notice.</p>
+        <p>Hosting, security, updates to your photos, hours, or business info, and a monthly visitor report — all covered by the flat monthly rate. Cancel anytime with 30 days notice.</p>
       </div>
     </div>
   </div>
@@ -304,7 +320,7 @@
         <div class="price-num">$50 <small>per month</small></div>
         <ul>
           <li>Hosting, security, and daily backups</li>
-          <li>Two content updates a month — menu changes, new photos, new hours</li>
+          <li>Two content updates a month — new photos, new reviews, updated hours or business info</li>
           <li>A monthly report: how many people visited and what they tapped</li>
           <li>Cancel anytime with 30 days notice</li>
         </ul>
